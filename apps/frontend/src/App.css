@@ -1,184 +1,278 @@
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
+/* Premium styling for Matrimony Platform Frontend */
+:root {
+  --nm-flat: 9px 9px 16px rgba(163, 177, 198, 0.4), -9px -9px 16px rgba(255, 255, 255, 0.8);
+  --nm-inset: inset 6px 6px 12px rgba(163, 177, 198, 0.4), inset -6px -6px 12px rgba(255, 255, 255, 0.8);
+  --accent-gradient: linear-gradient(135deg, #aa3bff 0%, #6c63ff 100%);
+  --panel-bg: #e0e5ec;
+  --text-primary: #313b4c;
+  --text-secondary: #68768e;
+  --text-light: #ffffff;
+}
 
-  &:hover {
-    border-color: var(--accent-border);
-  }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nm-flat: 9px 9px 16px rgba(0, 0, 0, 0.4), -9px -9px 16px rgba(42, 43, 53, 0.8);
+    --nm-inset: inset 6px 6px 12px rgba(0, 0, 0, 0.4), inset -6px -6px 12px rgba(42, 43, 53, 0.8);
+    --accent-gradient: linear-gradient(135deg, #c084fc 0%, #8b5cf6 100%);
+    --panel-bg: #1f2028;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-light: #0f172a;
   }
 }
 
-.hero {
-  position: relative;
-
-  .base,
-  .framework,
-  .vite {
-    inset-inline: 0;
-    margin: 0 auto;
-  }
-
-  .base {
-    width: 170px;
-    position: relative;
-    z-index: 0;
-  }
-
-  .framework,
-  .vite {
-    position: absolute;
-  }
-
-  .framework {
-    z-index: 1;
-    top: 34px;
-    height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
-  }
-
-  .vite {
-    z-index: 0;
-    top: 107px;
-    height: 26px;
-    width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
-  }
+body {
+  background-color: var(--panel-bg);
+  color: var(--text-primary);
+  margin: 0;
+  font-family: 'Outfit', 'Inter', sans-serif;
+  transition: all 0.3s ease;
 }
 
-#center {
+#root {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  place-content: center;
-  place-items: center;
+  box-sizing: border-box;
+}
+
+/* Premium Neumorphic Layouts */
+.container {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
   flex-grow: 1;
-
-  @media (max-width: 1024px) {
-    padding: 32px 20px 24px;
-    gap: 18px;
-  }
 }
 
-#next-steps {
-  display: flex;
-  border-top: 1px solid var(--border);
-  text-align: left;
-
-  & > div {
-    flex: 1 1 0;
-    padding: 32px;
-    @media (max-width: 1024px) {
-      padding: 24px 20px;
-    }
-  }
-
-  .icon {
-    margin-bottom: 16px;
-    width: 22px;
-    height: 22px;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-#docs {
-  border-right: 1px solid var(--border);
-
-  @media (max-width: 1024px) {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
-}
-
-#next-steps ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 8px;
-  margin: 32px 0 0;
-
-  .logo {
-    height: 18px;
-  }
-
-  a {
-    color: var(--text-h);
-    font-size: 16px;
-    border-radius: 6px;
-    background: var(--social-bg);
-    display: flex;
-    padding: 6px 12px;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    transition: box-shadow 0.3s;
-
-    &:hover {
-      box-shadow: var(--shadow);
-    }
-    .button-icon {
-      height: 18px;
-      width: 18px;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    li {
-      flex: 1 1 calc(50% - 8px);
-    }
-
-    a {
-      width: 100%;
-      justify-content: center;
-      box-sizing: border-box;
-    }
-  }
-}
-
-#spacer {
-  height: 88px;
-  border-top: 1px solid var(--border);
-  @media (max-width: 1024px) {
-    height: 48px;
-  }
-}
-
-.ticks {
-  position: relative;
+.card {
+  background-color: var(--panel-bg);
+  border-radius: 24px;
+  box-shadow: var(--nm-flat);
+  padding: 30px;
   width: 100%;
+  max-width: 550px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -4.5px;
-    border: 5px solid transparent;
-  }
+.card:hover {
+  transform: translateY(-2px);
+}
 
-  &::before {
-    left: 0;
-    border-left-color: var(--border);
-  }
-  &::after {
-    right: 0;
-    border-right-color: var(--border);
-  }
+.card-inset {
+  box-shadow: var(--nm-inset);
+  background-color: var(--panel-bg);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Input Styles */
+.input-well {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--panel-bg);
+  box-shadow: var(--nm-inset);
+  color: var(--text-primary);
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.input-well:focus {
+  box-shadow: var(--nm-inset), 0 0 0 2px var(--accent);
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+  background: var(--accent-gradient);
+  cursor: pointer;
+  box-shadow: var(--nm-flat);
+  transition: all 0.2s ease;
+}
+
+.btn:active {
+  box-shadow: var(--nm-inset);
+  transform: scale(0.98);
+}
+
+.btn-secondary {
+  background: var(--panel-bg);
+  color: var(--text-primary);
+  box-shadow: var(--nm-flat);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:active {
+  box-shadow: var(--nm-inset);
+}
+
+/* Onboarding step headers */
+.wizard-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.step-indicator {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: var(--nm-flat);
+}
+
+.step-indicator.active {
+  background: var(--accent-gradient);
+  color: #fff;
+}
+
+/* Range Slider */
+.slider-container {
+  margin: 20px 0;
+}
+
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* Photo Cards Grid */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.photo-card {
+  aspect-ratio: 1;
+  border-radius: 16px;
+  box-shadow: var(--nm-flat);
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-card.empty {
+  box-shadow: var(--nm-inset);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.photo-card .actions {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.photo-card .actions button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/* Matching profiles screen layout */
+.matches-layout {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 320px;
+}
+
+.grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.profile-card {
+  background: var(--panel-bg);
+  border-radius: 20px;
+  box-shadow: var(--nm-flat);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-img-header {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.profile-info {
+  padding: 20px;
+}
+
+.profile-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--accent-gradient);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Checklist progress indicator */
+.checklist-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.progress-bar-well {
+  width: 100%;
+  height: 12px;
+  background-color: var(--panel-bg);
+  box-shadow: var(--nm-inset);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--accent-gradient);
+  border-radius: 6px;
+  transition: width 0.4s ease;
 }

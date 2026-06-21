@@ -10,11 +10,15 @@
   "dependencies": {
     "@matrimony/shared-errors": "*",
     "@matrimony/shared-logger": "*",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.8.9",
+    "@types/pg": "^8.11.0",
+    "@types/jsonwebtoken": "^9.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
