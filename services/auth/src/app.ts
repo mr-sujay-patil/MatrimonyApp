@@ -108,6 +108,24 @@ async function initDb() {
   }
 }
 
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Welcome to the Matrimony Platform Auth Service API.',
+    status: 'ACTIVE',
+    endpoints: [
+      'POST /api/v1/auth/register',
+      'POST /api/v1/auth/otp/request',
+      'POST /api/v1/auth/otp/verify',
+      'POST /api/v1/auth/refresh',
+      'POST /api/v1/auth/logout'
+    ]
+  });
+});
+
+app.get('/health', (req, res) => {
+  res.json({ status: 'UP', service: 'auth-service' });
+});
+
 // STORY-001: Register Endpoint
 app.post('/api/v1/auth/register', async (req, res, next) => {
   const { phone_number, email, password, role } = req.body;
