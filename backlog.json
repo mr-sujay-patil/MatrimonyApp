@@ -1186,6 +1186,109 @@
       "taskIds": [],
       "attachmentIds": [],
       "commentIds": []
+    },
+    {
+      "id": "STORY-050",
+      "epicId": "EPIC-FEAT-002",
+      "title": "Kanban Board Projects & Save File API",
+      "description": "Implement local config file-based projects REST API read/write endpoints (/api/projects and /api/projects/save-file) for Kanban sync.",
+      "businessValue": "High - Enables loading and saving of the board layout locally.",
+      "priority": "High",
+      "status": "IN_PROGRESS",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-06-25",
+      "labels": [
+        "Backend",
+        "Kanban",
+        "REL-001"
+      ],
+      "acceptanceCriteria": [
+        "GET /api/projects returns the merged structure of board-config.json, project-config.json, and backlog.json.",
+        "POST /api/projects/save-file updates the configurations on disk and serializes backlog.json."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-051",
+      "epicId": "EPIC-FEAT-002",
+      "title": "Kafka Integration - Publishing Backlog Mutations",
+      "description": "Implement KafkaProducerService that identifies changes on save-file requests and publishes STORY_CREATED, STORY_MOVED, STORY_UPDATED, or STORY_DELETED events to Kafka.",
+      "businessValue": "High - Broadcasts local board changes to external systems.",
+      "priority": "High",
+      "status": "IN_PROGRESS",
+      "storyPoints": 5,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-06-25",
+      "labels": [
+        "Backend",
+        "Kanban",
+        "Kafka",
+        "REL-001"
+      ],
+      "acceptanceCriteria": [
+        "Detects mutations by diffing old vs. new board aggregates.",
+        "Publishes events on dev.agile.backlog.events topic with storyId as message key."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-052",
+      "epicId": "EPIC-FEAT-002",
+      "title": "Kafka Integration - Consuming & Syncing Backlog Events",
+      "description": "Implement KafkaConsumerService that consumes backlog events from Kafka and synchronizes modifications to backlog.json.",
+      "businessValue": "High - Syncs external backlog updates to the local Kanban board files.",
+      "priority": "High",
+      "status": "IN_PROGRESS",
+      "storyPoints": 5,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-06-26",
+      "labels": [
+        "Backend",
+        "Kanban",
+        "Kafka",
+        "REL-001"
+      ],
+      "acceptanceCriteria": [
+        "Subscribes to dev.agile.backlog.events and discards self-published events (sourceSystem === 'KANBAN').",
+        "Applies external events to update backlog.json on disk."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-053",
+      "epicId": "EPIC-FEAT-002",
+      "title": "Consumer Resilience, De-duplication & DLQ",
+      "description": "Implement idempotency de-duplication, sequencing verification, and exponential backoff retry topic/DLQ routing for Kafka consumers.",
+      "businessValue": "Medium - Enhances reliability and resilience of the Kafka message sync pipeline.",
+      "priority": "Medium",
+      "status": "IN_PROGRESS",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-06-27",
+      "labels": [
+        "Backend",
+        "Kafka",
+        "Security",
+        "REL-001"
+      ],
+      "acceptanceCriteria": [
+        "Implements 24h eventId de-duplication cache and timestamp sequence checking.",
+        "Routes failed items to retry topic (max 3 retries) and then to DLQ topic."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
     }
   ],
   "tasks": [],
