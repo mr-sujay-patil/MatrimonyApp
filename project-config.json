@@ -1,0 +1,23 @@
+{
+  "projectId": "9a26c124-b363-45b6-9358-5c0b0d143422",
+  "projectName": "MatrimonyApp",
+  "description": "A trust-focused matrimonial application with a React frontend and microservices backend.",
+  "owner": "USR-001",
+  "color": "#6C63FF",
+  "icon": "heart",
+  "version": "1.0.0",
+  "boardColumns": [
+    "Backlog",
+    "To Do",
+    "In Progress",
+    "Review",
+    "Blocked",
+    "Done"
+  ],
+  "priorities": [
+    "Critical",
+    "High",
+    "Medium",
+    "Low"
+  ]
+}

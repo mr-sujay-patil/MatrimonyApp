@@ -1,0 +1,228 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BoardAggregate",
+  "type": "object",
+  "properties": {
+    "metadata": { "$ref": "#/definitions/ContractMetadata" },
+    "project": { "$ref": "#/definitions/ContractProject" },
+    "participants": { "type": "array", "items": { "$ref": "#/definitions/ContractParticipant" } },
+    "initiatives": { "type": "array", "items": { "$ref": "#/definitions/ContractInitiative" } },
+    "epics": { "type": "array", "items": { "$ref": "#/definitions/ContractEpic" } },
+    "stories": { "type": "array", "items": { "$ref": "#/definitions/ContractStory" } },
+    "tasks": { "type": "array", "items": { "$ref": "#/definitions/ContractTask" } },
+    "subtasks": { "type": "array", "items": { "$ref": "#/definitions/ContractSubtask" } },
+    "comments": { "type": "array", "items": { "$ref": "#/definitions/ContractComment" } },
+    "attachments": { "type": "array", "items": { "$ref": "#/definitions/ContractAttachment" } },
+    "dependencies": { "type": "array", "items": { "$ref": "#/definitions/ContractDependency" } },
+    "activityLog": { "type": "array", "items": { "$ref": "#/definitions/ContractActivity" } }
+  },
+  "required": [
+    "metadata",
+    "project",
+    "participants",
+    "initiatives",
+    "epics",
+    "stories",
+    "tasks",
+    "subtasks",
+    "comments",
+    "attachments",
+    "dependencies",
+    "activityLog"
+  ],
+  "definitions": {
+    "ContractMetadata": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": { "type": "string" },
+        "createdBy": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "lastUpdated": { "type": "string" },
+        "projectType": { "type": "string" },
+        "domain": { "type": "string" },
+        "boardVersion": { "type": "string" }
+      },
+      "required": ["schemaVersion", "createdBy", "createdAt", "lastUpdated", "projectType", "domain", "boardVersion"]
+    },
+    "ContractProject": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "shortName": { "type": "string" },
+        "description": { "type": "string" },
+        "status": { "type": "string" },
+        "ownerId": { "type": "string" },
+        "startDate": { "type": "string" },
+        "targetRelease": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["id", "name", "shortName", "description", "status", "ownerId", "startDate", "targetRelease", "tags"]
+    },
+    "ContractParticipant": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": {
+          "type": "string",
+          "enum": [
+            "Product Owner",
+            "Business Analyst",
+            "Architect",
+            "Frontend Developer",
+            "Backend Developer",
+            "QA Engineer",
+            "DevOps Engineer",
+            "Scrum Master",
+            "Stakeholder"
+          ]
+        },
+        "avatar": { "type": "string" },
+        "active": { "type": "boolean" },
+        "bg": { "type": "string" },
+        "color": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "role", "avatar", "active"]
+    },
+    "ContractInitiative": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "projectId": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "status": { "type": "string" },
+        "ownerId": { "type": "string" }
+      },
+      "required": ["id", "projectId", "title", "description", "status", "ownerId"]
+    },
+    "ContractEpic": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "initiativeId": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "priority": { "type": "string" },
+        "status": { "type": "string" },
+        "storyPoints": { "type": "number" },
+        "ownerId": { "type": "string" },
+        "labels": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["id", "initiativeId", "title", "description", "priority", "status", "storyPoints", "ownerId", "labels"]
+    },
+    "ContractStory": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "epicId": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "businessValue": { "type": "string" },
+        "priority": { "type": "string", "enum": ["Critical", "High", "Medium", "Low"] },
+        "status": { "type": "string", "enum": ["Backlog", "To Do", "In Progress", "Review", "Blocked", "Done"] },
+        "storyPoints": { "type": "number" },
+        "assigneeId": { "type": "string" },
+        "reporterId": { "type": "string" },
+        "dueDate": { "type": "string" },
+        "labels": { "type": "array", "items": { "type": "string" } },
+        "acceptanceCriteria": { "type": "array", "items": { "type": "string" } },
+        "taskIds": { "type": "array", "items": { "type": "string" } },
+        "attachmentIds": { "type": "array", "items": { "type": "string" } },
+        "commentIds": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": [
+        "id",
+        "epicId",
+        "title",
+        "description",
+        "businessValue",
+        "priority",
+        "status",
+        "storyPoints",
+        "assigneeId",
+        "reporterId",
+        "dueDate",
+        "labels",
+        "acceptanceCriteria",
+        "taskIds",
+        "attachmentIds",
+        "commentIds"
+      ]
+    },
+    "ContractTask": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "storyId": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "status": { "type": "string", "enum": ["To Do", "In Progress", "Done"] },
+        "estimateHours": { "type": "number" },
+        "assigneeId": { "type": "string" },
+        "subtaskIds": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["id", "storyId", "title", "description", "status", "estimateHours", "assigneeId", "subtaskIds"]
+    },
+    "ContractSubtask": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "taskId": { "type": "string" },
+        "title": { "type": "string" },
+        "status": { "type": "string", "enum": ["To Do", "Done"] }
+      },
+      "required": ["id", "taskId", "title", "status"]
+    },
+    "ContractComment": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "entityType": { "type": "string", "enum": ["Story", "Task"] },
+        "entityId": { "type": "string" },
+        "authorId": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "message": { "type": "string" }
+      },
+      "required": ["id", "entityType", "entityId", "authorId", "createdAt", "message"]
+    },
+    "ContractAttachment": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "entityType": { "type": "string", "enum": ["Story", "Task"] },
+        "entityId": { "type": "string" },
+        "name": { "type": "string" },
+        "type": { "type": "string" },
+        "url": { "type": "string" }
+      },
+      "required": ["id", "entityType", "entityId", "name", "type", "url"]
+    },
+    "ContractDependency": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "sourceId": { "type": "string" },
+        "targetId": { "type": "string" },
+        "relationship": { "type": "string", "enum": ["blocks", "blocked-by", "depends-on", "relates-to", "duplicates"] }
+      },
+      "required": ["id", "sourceId", "targetId", "relationship"]
+    },
+    "ContractActivity": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "entityType": { "type": "string", "enum": ["Story", "Task"] },
+        "entityId": { "type": "string" },
+        "action": { "type": "string" },
+        "performedBy": { "type": "string" },
+        "oldValue": { "type": "string" },
+        "newValue": { "type": "string" },
+        "timestamp": { "type": "string" }
+      },
+      "required": ["id", "entityType", "entityId", "action", "performedBy", "oldValue", "newValue", "timestamp"]
+    }
+  }
+}

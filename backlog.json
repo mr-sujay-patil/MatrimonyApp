@@ -1,0 +1,1073 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0.0",
+    "createdBy": "USR-001",
+    "createdAt": "2026-06-21T17:23:12Z",
+    "lastUpdated": "2026-06-21T19:35:00Z",
+    "projectType": "Microservices",
+    "domain": "Matrimonial",
+    "boardVersion": "1.0.0"
+  },
+  "project": {
+    "id": "9a26c124-b363-45b6-9358-5c0b0d143422",
+    "name": "MatrimonyApp",
+    "shortName": "MAT",
+    "description": "A trust-focused matrimonial application with a React frontend and microservices backend.",
+    "status": "Active",
+    "ownerId": "USR-001",
+    "startDate": "2026-06-21",
+    "targetRelease": "REL-001",
+    "tags": ["React", "Microservices", "Neumorphism"]
+  },
+  "participants": [
+    {
+      "id": "USR-001",
+      "name": "Antigravity (AI PM)",
+      "email": "pm@matrimony.app",
+      "role": "Product Owner",
+      "avatar": "avatar-1.png",
+      "active": true,
+      "bg": "#E0E5EC",
+      "color": "#6C63FF"
+    },
+    {
+      "id": "USR-002",
+      "name": "Lead Frontend Developer",
+      "email": "frontend@matrimony.app",
+      "role": "Frontend Developer",
+      "avatar": "avatar-2.png",
+      "active": true,
+      "bg": "#E0E5EC",
+      "color": "#38B2AC"
+    },
+    {
+      "id": "USR-003",
+      "name": "Lead Backend Developer",
+      "email": "backend@matrimony.app",
+      "role": "Backend Developer",
+      "avatar": "avatar-3.png",
+      "active": true,
+      "bg": "#E0E5EC",
+      "color": "#8B84FF"
+    }
+  ],
+  "initiatives": [
+    {
+      "id": "INIT-001",
+      "projectId": "9a26c124-b363-45b6-9358-5c0b0d143422",
+      "title": "Build Matrimony Platform",
+      "description": "Develop a complete, trust-focused matchmaking ecosystem with a React frontend and microservices backend.",
+      "status": "Active",
+      "ownerId": "USR-001"
+    }
+  ],
+  "epics": [
+    {
+      "id": "EPIC-001",
+      "initiativeId": "INIT-001",
+      "title": "Level 1 — Foundation MVP",
+      "description": "Establish the minimum functional experience: authentication, basic onboarding, partner preferences, photo manager, search discovery, and interest exchange.",
+      "priority": "High",
+      "status": "In Progress",
+      "storyPoints": 113,
+      "ownerId": "USR-001",
+      "labels": ["MVP", "Level-1"]
+    },
+    {
+      "id": "EPIC-002",
+      "initiativeId": "INIT-001",
+      "title": "Level 2 — Trust & Engagement",
+      "description": "Implement credentials verification badges, saved searches, in-app messaging, visitor tracking, and block/report moderation tools.",
+      "priority": "Medium",
+      "status": "To Do",
+      "storyPoints": 60,
+      "ownerId": "USR-001",
+      "labels": ["Engagement", "Level-2"]
+    },
+    {
+      "id": "EPIC-003",
+      "initiativeId": "INIT-001",
+      "title": "Level 3 — Premium Matchmaking",
+      "description": "Introduce monetization mechanics via subscriptions, smart recommendations, profile boosts, and compatibility scores.",
+      "priority": "Medium",
+      "status": "To Do",
+      "storyPoints": 80,
+      "ownerId": "USR-001",
+      "labels": ["Monetization", "Level-3"]
+    },
+    {
+      "id": "EPIC-004",
+      "initiativeId": "INIT-001",
+      "title": "Level 4 — Intelligence & Rich Interactions",
+      "description": "Incorporate automated Selfie & Govt ID verification, video profiles, secure voice/video calling, and AI conversation suggestions.",
+      "priority": "Low",
+      "status": "To Do",
+      "storyPoints": 100,
+      "ownerId": "USR-001",
+      "labels": ["AI-Safety", "Level-4"]
+    },
+    {
+      "id": "EPIC-005",
+      "initiativeId": "INIT-001",
+      "title": "Level 5 — Ecosystem & Expansion",
+      "description": "Add an AI Matchmaking Assistant, wedding services marketplace, relationship counseling resources, and regional community portals.",
+      "priority": "Low",
+      "status": "To Do",
+      "storyPoints": 120,
+      "ownerId": "USR-001",
+      "labels": ["Ecosystem", "Level-5"]
+    },
+    {
+      "id": "EPIC-FEAT-001",
+      "initiativeId": "INIT-001",
+      "title": "Feature: User Authentication (Multiple Methods)",
+      "description": "Allows users to securely register and access the platform via Mobile OTP and Email Magic Links.",
+      "priority": "High",
+      "status": "To Do",
+      "storyPoints": 19,
+      "ownerId": "USR-001",
+      "labels": ["Feature", "Auth", "MVP"]
+    },
+    {
+      "id": "EPIC-FEAT-002",
+      "initiativeId": "INIT-001",
+      "title": "Feature: User Profile Management & Editing",
+      "description": "Multi-step wizard to create and edit matrimonial profiles capturing personal, family, academic, and lifestyle traits.",
+      "priority": "High",
+      "status": "To Do",
+      "storyPoints": 19,
+      "ownerId": "USR-001",
+      "labels": ["Feature", "Profiles", "MVP"]
+    },
+    {
+      "id": "EPIC-FEAT-003",
+      "initiativeId": "INIT-001",
+      "title": "Feature: Partner Preferences",
+      "description": "Configure preferences for age, height, community, languages, and location.",
+      "priority": "High",
+      "status": "To Do",
+      "storyPoints": 8,
+      "ownerId": "USR-001",
+      "labels": ["Feature", "Preferences", "MVP"]
+    },
+    {
+      "id": "EPIC-FEAT-004",
+      "initiativeId": "INIT-001",
+      "title": "Feature: Profile Photos Manager",
+      "description": "Manage profile images, primary avatar, and photo visibility controls.",
+      "priority": "High",
+      "status": "To Do",
+      "storyPoints": 13,
+      "ownerId": "USR-001",
+      "labels": ["Feature", "Media", "MVP"]
+    },
+    {
+      "id": "EPIC-FEAT-005",
+      "initiativeId": "INIT-001",
+      "title": "Feature: Match Discovery (Search & Filtering)",
+      "description": "Profile search, active filters, geo-location queries, and daily match scoring alerts.",
+      "priority": "High",
+      "status": "To Do",
+      "storyPoints": 16,
+      "ownerId": "USR-001",
+      "labels": ["Feature", "Search", "MVP"]
+    },
+    {
+      "id": "EPIC-FEAT-006",
+      "initiativeId": "INIT-001",
+      "title": "Feature: Interest Management (Send / Accept / Reject)",
+      "description": "Express interest, dashboard to manage received/sent states, and double-opt-in logic.",
+      "priority": "High",
+      "status": "To Do",
+      "storyPoints": 16,
+      "ownerId": "USR-001",
+      "labels": ["Feature", "Interests", "MVP"]
+    },
+    {
+      "id": "EPIC-FEAT-007",
+      "initiativeId": "INIT-001",
+      "title": "Feature: System & Activity Notifications",
+      "description": "Push, email, and in-app updates regarding interest updates and daily recommendations.",
+      "priority": "Medium",
+      "status": "To Do",
+      "storyPoints": 11,
+      "ownerId": "USR-001",
+      "labels": ["Feature", "Notifications", "MVP"]
+    },
+    {
+      "id": "EPIC-FEAT-008",
+      "initiativeId": "INIT-001",
+      "title": "Feature: Basic Privacy Controls",
+      "description": "Profile visibility settings, blur controls for non-matched profiles, and API gateway contact details masking.",
+      "priority": "High",
+      "status": "To Do",
+      "storyPoints": 11,
+      "ownerId": "USR-001",
+      "labels": ["Feature", "Privacy", "MVP"]
+    }
+  ],
+  "stories": [
+    {
+      "id": "STORY-001",
+      "epicId": "EPIC-FEAT-001",
+      "title": "Mobile OTP Request UI & API Flow",
+      "description": "Implement the mobile phone number input form in the login screen, with an API endpoint that generates a 6-digit OTP, stores it in Redis with a 5-minute TTL, and triggers the SMS gateway delivery.",
+      "businessValue": "Critical - Initial point of entry and security boundary for serious seekers.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-07-15",
+      "labels": ["Frontend", "Backend", "Auth", "REL-001"],
+      "acceptanceCriteria": [
+        "Login screen renders a clean mobile number input conforming to standard E.164 formats.",
+        "Submit button sends a POST request to '/api/v1/auth/otp/send' with phone number payload.",
+        "Endpoint generates a random 6-digit OTP, saves phone number as key in Redis with 300 seconds TTL.",
+        "SMS dispatch completes successfully or invokes a mock carrier callback for logging."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-002",
+      "epicId": "EPIC-FEAT-001",
+      "title": "OTP Verification & Token Emission",
+      "description": "Implement code verification form and backend validation logic which confirms the Redis OTP key, issues short-lived Access Token (JWT) and sets standard session cookies.",
+      "businessValue": "Critical - Authenticates identity and unlocks the onboarding wizard.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-07-15",
+      "labels": ["Frontend", "Backend", "Auth", "REL-001"],
+      "acceptanceCriteria": [
+        "OTP verification overlay renders 6 numeric character inputs.",
+        "POST request sent to '/api/v1/auth/otp/verify' containing phone number and OTP code.",
+        "Server validates input matching active Redis record, signs HS256 Access Token, and registers active UserAccount in PostgreSQL.",
+        "Success response returns HTTP-Only session tokens, redirecting user to Onboarding wizard."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-003",
+      "epicId": "EPIC-FEAT-001",
+      "title": "Email Magic Link Login",
+      "description": "Develop email sign-in route enabling users to submit their email and verify credentials by clicking a temporary passwordless login token sent via email.",
+      "businessValue": "High - Offers backup passwordless login method for professionals on desktops.",
+      "priority": "Medium",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-07-20",
+      "labels": ["Frontend", "Backend", "Auth", "REL-001"],
+      "acceptanceCriteria": [
+        "Option to switch to Email Login visible on login dialog.",
+        "POST request to '/api/v1/auth/magic-link/send' initiates temporary login ticket (15-min expiry).",
+        "Dispatches SendGrid / SES transactional template containing unique authorization link.",
+        "Clicking link validates signature at '/api/v1/auth/magic-link/verify' and authenticates session."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-004",
+      "epicId": "EPIC-FEAT-001",
+      "title": "Session Management & Silent Refresh Tokens",
+      "description": "Configure token rotation policies including 15-minute Access Token lifespan, automated HTTP-Only cookie silent refresh, and logout blacklist hooks.",
+      "businessValue": "High - Secures platform sessions from active interception and token abuse.",
+      "priority": "Medium",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-07-20",
+      "labels": ["Backend", "Auth", "Security", "REL-001"],
+      "acceptanceCriteria": [
+        "Gateway verifies JWT validity checking signature, expiration, and verified claims.",
+        "React app triggers Axios interceptor to execute '/api/v1/auth/refresh' silently before 15-minute token expiry.",
+        "Logout endpoint blacklists access tokens inside Redis for remainder of payload lifetime."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-005",
+      "epicId": "EPIC-FEAT-001",
+      "title": "OTP Lockout Brute Force Prevention",
+      "description": "Implement rate limiting and security lockout policies that block OTP checks for an hour upon consecutive failures.",
+      "businessValue": "High - Mitigates automated dictionary and OTP brute force attacks.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-07-22",
+      "labels": ["Backend", "Auth", "Security", "REL-001"],
+      "acceptanceCriteria": [
+        "Store login failure count in Redis tied to target phone key.",
+        "Upon 3 consecutive incorrect OTP entries, raise 'OTP_VERIFICATION_LOCKED' error response.",
+        "Reject all subsequent attempts for 1 hour, returning code 429."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-006",
+      "epicId": "EPIC-FEAT-002",
+      "title": "Personal Details Onboarding Form",
+      "description": "Design step 1 of the onboarding wizard capturing basic identity and attributes using React and Neumorphic design assets.",
+      "businessValue": "High - Captures basic user characteristics necessary for matching engine ingestion.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-07-25",
+      "labels": ["Frontend", "Profiles", "REL-001"],
+      "acceptanceCriteria": [
+        "Wizard collects Name, Gender, DOB (verifies age is >= 18 years), Height in cm, and Mother Tongue.",
+        "Inputs utilize Neumorphic inset deep shadow wells with active accent highlighting.",
+        "Enforces inline validation for missing inputs prior to enabling 'Next' button."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-007",
+      "epicId": "EPIC-FEAT-002",
+      "title": "Family Background Information Step",
+      "description": "Design step 2 of the onboarding wizard mapping parent and family traits tailored for parent segments.",
+      "businessValue": "High - Satisfies critical job of Family-Assisted seekers needing background details.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-07-25",
+      "labels": ["Frontend", "Profiles", "REL-001"],
+      "acceptanceCriteria": [
+        "Wizard collects Family Type (Nuclear/Joint), Parents' Occupations, Family Status, and Family Values.",
+        "Utilizes standard dropdown boxes restricted strictly to system-configured database values.",
+        "Integrates wizard navigation permitting backward step retrieval without data loss."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-008",
+      "epicId": "EPIC-FEAT-002",
+      "title": "Career, Education & Lifestyle Form Onboarding",
+      "description": "Design step 3 of onboarding wizard mapping highest educational degree, university details, current occupation, industry, income range, and lifestyle details.",
+      "businessValue": "High - Collects career parameters crucial for matchmaking compatibility sorting.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-07-28",
+      "labels": ["Frontend", "Profiles", "REL-001"],
+      "acceptanceCriteria": [
+        "Wizard fields map Highest Degree, University, Current Occupation, Industry, Annual Income Range.",
+        "Captures lifestyle factors: Diet (Veg/Non-Veg/Eggitarian) and habits (smoking/drinking).",
+        "Form submission triggers profile initialization POST payload to '/api/v1/profiles/onboard'."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-009",
+      "epicId": "EPIC-FEAT-002",
+      "title": "Profile Completion Checklist UI",
+      "description": "Implement profile completion progress indicator in React, showing progress steps and prompting users on missing attributes.",
+      "businessValue": "Medium - Incentivizes users to complete all wizard steps for better visibility.",
+      "priority": "Medium",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-07-30",
+      "labels": ["Frontend", "Profiles", "REL-001"],
+      "acceptanceCriteria": [
+        "Progress indicator displays percentage status calculated dynamically based on filled database properties.",
+        "Cheklist prompts user to complete missing blocks (e.g. upload photo, input preferences).",
+        "Enforces constraints: Profile cannot reach 100% completion unless at least one valid avatar photo is uploaded."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-010",
+      "epicId": "EPIC-FEAT-002",
+      "title": "Profile Editor Dashboard Settings",
+      "description": "Implement a dashboard component allowing users to view, manage, and update their profile variables post-onboarding.",
+      "businessValue": "High - Enables users to correct details and change attributes over time.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-02",
+      "labels": ["Frontend", "Backend", "Profiles", "REL-001"],
+      "acceptanceCriteria": [
+        "Dashboard fetches current user metadata and presents it in read-only Neumorphic clay containers.",
+        "Clicking field toggles edit inputs, validated against server rules upon saving.",
+        "PUT requests update 'user_profiles' table and trigger RabbitMQ 'user.profile.updated' sync event."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-011",
+      "epicId": "EPIC-FEAT-003",
+      "title": "Partner Preference Slider & Multi-Select UI Settings",
+      "description": "Build user preferences panel allowing seekers to establish desired match bounds for potential profiles.",
+      "businessValue": "High - Essential component for tailoring user recommendations and discovery scope.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-05",
+      "labels": ["Frontend", "Preferences", "REL-001"],
+      "acceptanceCriteria": [
+        "Renders dual-thumb Neumorphic range sliders for age (min 18, max 70) and height boundaries.",
+        "Supports multi-select tag inputs for Religions, Languages, and Locations.",
+        "Settings page provides a 'Save Preferences' button sending config to Profile Service backend."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-012",
+      "epicId": "EPIC-FEAT-003",
+      "title": "Partner Preference Server Validation & Defaults",
+      "description": "Develop backend validation logic for preferences table, enforcing input bounds and writing default values for incomplete preference profiles.",
+      "businessValue": "Medium - Keeps search parameters within valid ranges and prevents indexing faults.",
+      "priority": "Medium",
+      "status": "Backlog",
+      "storyPoints": 2,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-05",
+      "labels": ["Backend", "Preferences", "REL-001"],
+      "acceptanceCriteria": [
+        "API service rejects ranges failing core boundaries (e.g. min age < 18, min height <= 0).",
+        "If profile is loaded with empty parameters, defaults preference fields based on user's own regional location."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-013",
+      "epicId": "EPIC-FEAT-003",
+      "title": "Preferences-Search Index Integration",
+      "description": "Establish profile database triggers and jobs syncing modified preferences directly to the user metadata cache to update recommendations.",
+      "businessValue": "High - Ensures matches updates respond instantly to changes in preferences.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-07",
+      "labels": ["Backend", "Preferences", "Search", "REL-001"],
+      "acceptanceCriteria": [
+        "Saves target filters to 'partner_preferences' table.",
+        "Emits update event on message queue triggering Search service recommendations cache reload."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-014",
+      "epicId": "EPIC-FEAT-004",
+      "title": "Multi-Photo File Drag & Drop Component",
+      "description": "Build media upload container in React allowing users to drag and drop up to 5 profile images, with size checks and type filtering.",
+      "businessValue": "High - Enables users to personalize profiles with images securely.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-10",
+      "labels": ["Frontend", "Media", "REL-001"],
+      "acceptanceCriteria": [
+        "Uploader supports drag-and-drop or select file triggers for up to 5 items.",
+        "Validates size (max 5MB per file) and MIME type (.jpg, .jpeg, .png only) client-side.",
+        "Displays loader and preview states on cards using Neumorphic inset wells."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-015",
+      "epicId": "EPIC-FEAT-004",
+      "title": "Secure S3 Upload & Signed URL Logic",
+      "description": "Implement Media Service API endpoint that issues temporary presigned S3 URLs for client direct uploads and generates 15-minute TTL URLs for image retrieval.",
+      "businessValue": "Critical - Protects raw media storage bucket and restricts public media access.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-10",
+      "labels": ["Backend", "Media", "Security", "REL-001"],
+      "acceptanceCriteria": [
+        "Direct requests for raw bucket files blocked; files must be requested through secure temporary signed links.",
+        "API endpoint returns JSON mapping S3 upload destination and unique keys.",
+        "Client signs uploads directly to target S3 storage bucket; server indexes path in 'profile_photos' table."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-016",
+      "epicId": "EPIC-FEAT-004",
+      "title": "Avatar Setting & Photo Visibility Controls",
+      "description": "Build settings UI for managing uploaded pictures, setting primary display avatar, and applying privacy options.",
+      "businessValue": "High - Supports privacy controls requested by Independent Professionals.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-12",
+      "labels": ["Frontend", "Backend", "Media", "Privacy", "REL-001"],
+      "acceptanceCriteria": [
+        "Photo cards render actions to 'Set as Profile Picture' and toggle visibility (Public, Accepted Only, Hidden).",
+        "Changing photo visibility flags instantly updates profile database record.",
+        "Toggling visibility to 'Hidden' emits a search sync event removing that photo from elastic index."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-017",
+      "epicId": "EPIC-FEAT-005",
+      "title": "Match Discovery Sidebar & Card Grid UI",
+      "description": "Construct match browse screen rendering profile listings as Neumorphic cards, with side panels for basic filters.",
+      "businessValue": "High - Main dashboard view for search and user matchmaking interaction.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-15",
+      "labels": ["Frontend", "Search", "REL-001"],
+      "acceptanceCriteria": [
+        "Matches display as heavy rounded (32px) cards using Extruded Resting layout.",
+        "Hovering over profile card triggers smooth translateY movement and shadow transition.",
+        "Browse page Sidebar provides filters for Location, Religion, Language, and Age bounds."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-018",
+      "epicId": "EPIC-FEAT-005",
+      "title": "Elasticsearch Geo-Location & Filter Sync",
+      "description": "Implement Elasticsearch query handler inside Search Service parsing geodistance search variables and attribute keywords.",
+      "businessValue": "High - Delivers sub-150ms geo-proximity search results.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-15",
+      "labels": ["Backend", "Search", "REL-001"],
+      "acceptanceCriteria": [
+        "Search service maps incoming HTTP GET params to Elasticsearch JSON query clauses.",
+        "Validates location coordinates utilizing geodistance boundary filters.",
+        "Results returned include only matched criteria, calculating accuracy compatibility scores."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-019",
+      "epicId": "EPIC-FEAT-005",
+      "title": "Daily Recommended Matches Engine",
+      "description": "Build batch recommendations scheduler compiling 10 high-quality matching profiles for users daily.",
+      "businessValue": "High - Retains users by delivering fresh daily compatibility lists.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-18",
+      "labels": ["Backend", "Search", "REL-001"],
+      "acceptanceCriteria": [
+        "Matchmaker worker runs cron task evaluating preferences compatibility score (> 80%).",
+        "Serves exactly 10 curated profile objects to the user match cache.",
+        "Publishes 'match.recommendations.served' notification payload on successful compile."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-020",
+      "epicId": "EPIC-FEAT-005",
+      "title": "Inactive Profile Search Exclusions",
+      "description": "Incorporate automated cleanups filtering out profiles inactive for 90 days from the search index.",
+      "businessValue": "Medium - Keeps matchmaking index populated only with active, serious seekers.",
+      "priority": "Medium",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-18",
+      "labels": ["Backend", "Search", "REL-001"],
+      "acceptanceCriteria": [
+        "Profile database records capture user's last login date.",
+        "Sync script updates Elasticsearch index, setting query filter 'is_active: false' for records without recent logins.",
+        "Excluded profiles do not appear in recommendations or user filters."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-021",
+      "epicId": "EPIC-FEAT-006",
+      "title": "Send Connection Interest Button",
+      "description": "Build 'Send Interest' interaction hook on profile cards triggering connection request to target profile.",
+      "businessValue": "High - Enables initial contact interaction between serious seekers.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-20",
+      "labels": ["Frontend", "Backend", "Interests", "REL-001"],
+      "acceptanceCriteria": [
+        "Profile cards render clear 'Send Interest' call-to-action button.",
+        "Clicking posts data to '/api/v1/interests' modifying request status in Profile Database.",
+        "Button instantly shifts to disabled 'Interest Sent' state on success."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-022",
+      "epicId": "EPIC-FEAT-006",
+      "title": "Accept & Decline Connection Action Flows",
+      "description": "Implement Accept and Decline action hooks on incoming interest records, unlocking connection states.",
+      "businessValue": "High - Establishes double opt-in protocol ensuring safe communication paths inside platform.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-20",
+      "labels": ["Frontend", "Backend", "Interests", "REL-001"],
+      "acceptanceCriteria": [
+        "Dashboard displays actions to Approve or Decline received interests.",
+        "Approving request changes status to MATCHED and sends RabbitMQ 'match.interest.accepted' event.",
+        "Declining interest removes it from view, setting state to ARCHIVED without notifying sender."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-023",
+      "epicId": "EPIC-FEAT-006",
+      "title": "Connection Inbox Dashboard View",
+      "description": "Construct inbox view filtering connection requests into categorized tabs: Sent, Received, and Matches.",
+      "businessValue": "High - Organizes interest status tracking and active chats.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-22",
+      "labels": ["Frontend", "Interests", "REL-001"],
+      "acceptanceCriteria": [
+        "Inbox panel splits requests into 'Received Interests', 'Sent Interests', and 'Accepted Matches'.",
+        "Lists display sender avatars, matched tags, and creation dates.",
+        "Accepted matches include badge shortcuts linking directly to Chat window."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-024",
+      "epicId": "EPIC-FEAT-006",
+      "title": "Duplicate Interest Prevention Engine",
+      "description": "Implement checks verifying that only single connection requests can exist between two profiles.",
+      "businessValue": "Medium - Prevents spamming and double entries in database logs.",
+      "priority": "Medium",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-22",
+      "labels": ["Backend", "Interests", "Security", "REL-001"],
+      "acceptanceCriteria": [
+        "Database constraints prevent duplicate records for same sender-receiver pairs.",
+        "If sender issues a second interest while status is PENDING, service blocks query and logs request."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-025",
+      "epicId": "EPIC-FEAT-007",
+      "title": "In-App Notification Center UI",
+      "description": "Build notification tray in main header layout displaying real-time updates and unread counts.",
+      "businessValue": "High - Updates users instantly on matching activities while inside application.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-25",
+      "labels": ["Frontend", "Notifications", "REL-001"],
+      "acceptanceCriteria": [
+        "Header bell icon shows red numeric badge representing unread notifications count.",
+        "Clicking icon displays Neumorphic overlay listing recent match actions.",
+        "Clicking individual notification updates record state to read and routes user to action source."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-026",
+      "epicId": "EPIC-FEAT-007",
+      "title": "Push Notification Dispatcher integration",
+      "description": "Establish Notification Service worker listening to RabbitMQ events and triggering real-time alerts.",
+      "businessValue": "Medium - Engages users with out-of-app updates when connections occur.",
+      "priority": "Medium",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-25",
+      "labels": ["Backend", "Notifications", "REL-001"],
+      "acceptanceCriteria": [
+        "Notification service consumes 'user.auth.created' and 'match.interest.accepted' event streams.",
+        "Triggers push notifications callback via external provider client integrations."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-027",
+      "epicId": "EPIC-FEAT-007",
+      "title": "Daily Email Digest Scheduler",
+      "description": "Build email digest worker aggregating profile recommendations and dispatching summary sheets.",
+      "businessValue": "Low - Re-engages passive seekers using standard email digests.",
+      "priority": "Low",
+      "status": "Backlog",
+      "storyPoints": 2,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-28",
+      "labels": ["Backend", "Notifications", "REL-001"],
+      "acceptanceCriteria": [
+        "Cron scheduler executes daily compiled user digests from Redis recommendation lists.",
+        "Dispatches personalized SendGrid templates listing match counts and verification status.",
+        "Emails contain direct links back to matched profiles."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-028",
+      "epicId": "EPIC-FEAT-007",
+      "title": "Active Chat Notification Suppression",
+      "description": "Implement checks suppressing in-app notifications if user is already viewing the target communication thread.",
+      "businessValue": "Medium - Improves UX by preventing redundant notifications during active messaging.",
+      "priority": "Low",
+      "status": "Backlog",
+      "storyPoints": 1,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-28",
+      "labels": ["Frontend", "Notifications", "REL-001"],
+      "acceptanceCriteria": [
+        "Client maps currently focused conversation IDs in state manager.",
+        "If a notification is received for an active conversation, suppress the alert sound and bubble UI."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-029",
+      "epicId": "EPIC-FEAT-008",
+      "title": "Profile Visibility Search Settings",
+      "description": "Build settings toggles permitting users to set profiles to fully private, removing records from active search databases.",
+      "businessValue": "High - Delivers primary privacy control requested by serious seekers.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-30",
+      "labels": ["Frontend", "Backend", "Privacy", "REL-001"],
+      "acceptanceCriteria": [
+        "Privacy settings render visibility toggle switch (Public vs Hidden).",
+        "Changing toggle sends PUT payload updating PostgreSQL state.",
+        "Hidden profiles are immediately removed from Elasticsearch results."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-030",
+      "epicId": "EPIC-FEAT-008",
+      "title": "Photo Blurring Visbility Middleware",
+      "description": "Build API middleware delivering blurred photo versions to unverified or unmatched search requests.",
+      "businessValue": "Critical - Prevents image scraping and unauthorized user indexing.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 5,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-30",
+      "labels": ["Backend", "Media", "Privacy", "Security", "REL-001"],
+      "acceptanceCriteria": [
+        "Profiles endpoint checks request status between source and target IDs.",
+        "If status is not MATCHED, rewrite CDN photo URLs to point to pre-blurred placeholder assets.",
+        "High-definition image URLs are only returned upon double opt-in verification."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "STORY-031",
+      "epicId": "EPIC-FEAT-008",
+      "title": "Server-Side API Contact Details Masking",
+      "description": "Implement hard masking filter at the API Gateway level to block email and phone parameters unless connection status is MATCHED.",
+      "businessValue": "Critical - Secures sensitive personal credentials from public access.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-30",
+      "labels": ["Backend", "Privacy", "Security", "REL-001"],
+      "acceptanceCriteria": [
+        "API Gateway scans search and profile responses.",
+        "Unless relationship type is MATCHED, mask phone numbers (e.g. +91******340) and emails (e.g. ar***@domain.com) server-side.",
+        "Enforces phone number masking prior to payload delivery to React frontend client."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "RISK-001",
+      "epicId": "EPIC-001",
+      "title": "Risk Mitigation: High Onboarding Drop-Off Rate",
+      "description": "Design user analytics monitoring for multi-step onboarding wizard to identify and optimize fields causing user sign-off friction.",
+      "businessValue": "Risk Mitigation - Decreases user drop-off during mandatory verification and onboarding stages.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-002",
+      "reporterId": "USR-001",
+      "dueDate": "2026-07-28",
+      "labels": ["Analytics", "Profiles", "Risk", "REL-001"],
+      "acceptanceCriteria": [
+        "React wizard triggers 'onboarding_wizard_step' telemetry event on step transition.",
+        "Telemetry reports containing step number and elapsed time are pushed to analytics service database.",
+        "Enables identification of onboarding bottlenecks."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "RISK-002",
+      "epicId": "EPIC-001",
+      "title": "Risk Mitigation: Chat Platform Bypass Checks",
+      "description": "Develop client regex filter blocking phone number sharing inside chat conversations during initial connection stages.",
+      "businessValue": "Risk Mitigation - Encourages serious seekers to use safe communication paths inside platform.",
+      "priority": "Medium",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-09-02",
+      "labels": ["Chat", "Privacy", "Risk", "REL-001"],
+      "acceptanceCriteria": [
+        "Chat routing service evaluates outgoing text payloads.",
+        "Uses regular expressions checking for common phone number patterns.",
+        "Replaces detected digits with masking placeholder characters and displays warning notice to user."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "SPIKE-001",
+      "epicId": "EPIC-001",
+      "title": "Spike: SMS OTP Gateway Verification Integration Path",
+      "description": "Research API integration paths, delivery speed, and cost matrices for Twilio vs AWS SNS providers.",
+      "businessValue": "Technical spike to investigate OTP dispatch latency targets (< 2 seconds).",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 2,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-07-10",
+      "labels": ["Auth", "Infrastructure", "Spike", "REL-001"],
+      "acceptanceCriteria": [
+        "Produce architectural spike summary detailing pricing models and sandbox setup constraints.",
+        "Validate p95 gateway response latency is within standard limits (< 2 seconds).",
+        "Select primary and fallback SMS gateway provider endpoints."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    },
+    {
+      "id": "SPIKE-002",
+      "epicId": "EPIC-001",
+      "title": "Spike: Elasticsearch Geofenced Matches Indexing",
+      "description": "Benchmark geo-point query performance and distance sorting latency inside Elasticsearch indexing engine.",
+      "businessValue": "Technical spike verifying Elasticsearch search latency limits (< 150ms) for radius filters.",
+      "priority": "High",
+      "status": "Backlog",
+      "storyPoints": 3,
+      "assigneeId": "USR-003",
+      "reporterId": "USR-001",
+      "dueDate": "2026-08-10",
+      "labels": ["Search", "Infrastructure", "Spike", "REL-001"],
+      "acceptanceCriteria": [
+        "Establish local Docker index instance with dummy profile locations.",
+        "Verify query latency performance under concurrent reads.",
+        "Document geo-point mapping options and index schema configurations."
+      ],
+      "taskIds": [],
+      "attachmentIds": [],
+      "commentIds": []
+    }
+  ],
+  "tasks": [],
+  "subtasks": [],
+  "comments": [
+    {
+      "id": "COM-001",
+      "entityType": "Story",
+      "entityId": "STORY-001",
+      "authorId": "USR-001",
+      "createdAt": "2026-06-21T19:35:00Z",
+      "message": "Release mapping context: All Level 1 MVP user stories (STORY-001 through STORY-031), along with active risks (RISK-001/002) and spikes (SPIKE-001/002) are targeted for Version 1.0.0 (REL-001) scheduled for delivery in 8 weeks."
+    }
+  ],
+  "attachments": [],
+  "dependencies": [
+    {
+      "id": "DEP-001",
+      "sourceId": "STORY-006",
+      "targetId": "STORY-002",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-002",
+      "sourceId": "STORY-007",
+      "targetId": "STORY-006",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-003",
+      "sourceId": "STORY-008",
+      "targetId": "STORY-007",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-004",
+      "sourceId": "STORY-010",
+      "targetId": "STORY-008",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-005",
+      "sourceId": "STORY-013",
+      "targetId": "STORY-011",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-006",
+      "sourceId": "STORY-015",
+      "targetId": "STORY-014",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-007",
+      "sourceId": "STORY-016",
+      "targetId": "STORY-015",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-008",
+      "sourceId": "STORY-018",
+      "targetId": "STORY-017",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-009",
+      "sourceId": "STORY-022",
+      "targetId": "STORY-021",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-010",
+      "sourceId": "STORY-023",
+      "targetId": "STORY-022",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-011",
+      "sourceId": "STORY-026",
+      "targetId": "STORY-025",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-012",
+      "sourceId": "STORY-030",
+      "targetId": "STORY-016",
+      "relationship": "depends-on"
+    },
+    {
+      "id": "DEP-013",
+      "sourceId": "STORY-031",
+      "targetId": "STORY-030",
+      "relationship": "depends-on"
+    }
+  ],
+  "activityLog": []
+}

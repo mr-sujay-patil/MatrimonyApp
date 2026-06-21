@@ -1,0 +1,44 @@
+{
+  "columns": [
+    {
+      "id": "Backlog",
+      "title": "Backlog",
+      "bgHex": "#E0E5EC",
+      "dotColor": "#A3B1C6"
+    },
+    {
+      "id": "To Do",
+      "title": "To Do",
+      "bgHex": "#E0E5EC",
+      "dotColor": "#6C63FF",
+      "wipLimit": 15
+    },
+    {
+      "id": "In Progress",
+      "title": "In Progress",
+      "bgHex": "#E0E5EC",
+      "dotColor": "#38B2AC",
+      "wipLimit": 3
+    },
+    {
+      "id": "Review",
+      "title": "Review",
+      "bgHex": "#E0E5EC",
+      "dotColor": "#8B84FF",
+      "wipLimit": 4
+    },
+    {
+      "id": "Blocked",
+      "title": "Blocked",
+      "bgHex": "#E0E5EC",
+      "dotColor": "#FF5B5B",
+      "wipLimit": 2
+    },
+    {
+      "id": "Done",
+      "title": "Done",
+      "bgHex": "#E0E5EC",
+      "dotColor": "#2F855A"
+    }
+  ]
+}

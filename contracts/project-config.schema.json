@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProjectConfig",
+  "type": "object",
+  "properties": {
+    "projectId": { "type": "string" },
+    "projectName": { "type": "string" },
+    "description": { "type": "string" },
+    "owner": { "type": "string" },
+    "color": { "type": "string" },
+    "icon": { "type": "string" },
+    "version": { "type": "string" },
+    "boardColumns": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "priorities": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["projectId", "projectName", "description", "owner", "color", "icon", "version", "boardColumns", "priorities"]
+}

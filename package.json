@@ -1,0 +1,21 @@
+{
+  "name": "matrimony-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Matrimony Platform Monorepo",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "rm -rf node_modules **/node_modules **/dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "prettier": "^3.0.3"
+  }
+}

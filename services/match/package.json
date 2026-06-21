@@ -1,0 +1,21 @@
+{
+  "name": "@matrimony/match-service",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/app.ts",
+    "start": "node dist/app.js"
+  },
+  "dependencies": {
+    "@matrimony/shared-errors": "*",
+    "@matrimony/shared-logger": "*",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.8.9",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

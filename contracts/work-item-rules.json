@@ -1,0 +1,28 @@
+{
+  "wipLimits": {
+    "Backlog": null,
+    "To Do": 15,
+    "In Progress": 3,
+    "Review": 4,
+    "Blocked": 2,
+    "Done": null
+  },
+  "allowedTransitions": {
+    "Backlog": ["To Do"],
+    "To Do": ["Backlog", "In Progress"],
+    "In Progress": ["To Do", "Review", "Blocked"],
+    "Review": ["In Progress", "Done", "Blocked"],
+    "Blocked": ["In Progress", "Review", "To Do"],
+    "Done": ["Review"]
+  },
+  "requiredFieldsForTransition": {
+    "In Progress": ["assigneeId"],
+    "Review": ["assigneeId"],
+    "Blocked": ["description"]
+  },
+  "storyPointConfig": {
+    "minPoints": 0,
+    "maxPoints": 21,
+    "allowedValues": [0, 1, 2, 3, 5, 8, 13, 21]
+  }
+}
