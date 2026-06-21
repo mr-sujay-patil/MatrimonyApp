@@ -17,7 +17,11 @@
     "ownerId": "USR-001",
     "startDate": "2026-06-21",
     "targetRelease": "REL-001",
-    "tags": ["React", "Microservices", "Neumorphism"]
+    "tags": [
+      "React",
+      "Microservices",
+      "Neumorphism"
+    ]
   },
   "participants": [
     {
@@ -65,57 +69,72 @@
     {
       "id": "EPIC-001",
       "initiativeId": "INIT-001",
-      "title": "Level 1 — Foundation MVP",
+      "title": "Level 1 \u2014 Foundation MVP",
       "description": "Establish the minimum functional experience: authentication, basic onboarding, partner preferences, photo manager, search discovery, and interest exchange.",
       "priority": "High",
       "status": "In Progress",
       "storyPoints": 113,
       "ownerId": "USR-001",
-      "labels": ["MVP", "Level-1"]
+      "labels": [
+        "MVP",
+        "Level-1"
+      ]
     },
     {
       "id": "EPIC-002",
       "initiativeId": "INIT-001",
-      "title": "Level 2 — Trust & Engagement",
+      "title": "Level 2 \u2014 Trust & Engagement",
       "description": "Implement credentials verification badges, saved searches, in-app messaging, visitor tracking, and block/report moderation tools.",
       "priority": "Medium",
       "status": "To Do",
       "storyPoints": 60,
       "ownerId": "USR-001",
-      "labels": ["Engagement", "Level-2"]
+      "labels": [
+        "Engagement",
+        "Level-2"
+      ]
     },
     {
       "id": "EPIC-003",
       "initiativeId": "INIT-001",
-      "title": "Level 3 — Premium Matchmaking",
+      "title": "Level 3 \u2014 Premium Matchmaking",
       "description": "Introduce monetization mechanics via subscriptions, smart recommendations, profile boosts, and compatibility scores.",
       "priority": "Medium",
       "status": "To Do",
       "storyPoints": 80,
       "ownerId": "USR-001",
-      "labels": ["Monetization", "Level-3"]
+      "labels": [
+        "Monetization",
+        "Level-3"
+      ]
     },
     {
       "id": "EPIC-004",
       "initiativeId": "INIT-001",
-      "title": "Level 4 — Intelligence & Rich Interactions",
+      "title": "Level 4 \u2014 Intelligence & Rich Interactions",
       "description": "Incorporate automated Selfie & Govt ID verification, video profiles, secure voice/video calling, and AI conversation suggestions.",
       "priority": "Low",
       "status": "To Do",
       "storyPoints": 100,
       "ownerId": "USR-001",
-      "labels": ["AI-Safety", "Level-4"]
+      "labels": [
+        "AI-Safety",
+        "Level-4"
+      ]
     },
     {
       "id": "EPIC-005",
       "initiativeId": "INIT-001",
-      "title": "Level 5 — Ecosystem & Expansion",
+      "title": "Level 5 \u2014 Ecosystem & Expansion",
       "description": "Add an AI Matchmaking Assistant, wedding services marketplace, relationship counseling resources, and regional community portals.",
       "priority": "Low",
       "status": "To Do",
       "storyPoints": 120,
       "ownerId": "USR-001",
-      "labels": ["Ecosystem", "Level-5"]
+      "labels": [
+        "Ecosystem",
+        "Level-5"
+      ]
     },
     {
       "id": "EPIC-FEAT-001",
@@ -126,7 +145,11 @@
       "status": "To Do",
       "storyPoints": 19,
       "ownerId": "USR-001",
-      "labels": ["Feature", "Auth", "MVP"]
+      "labels": [
+        "Feature",
+        "Auth",
+        "MVP"
+      ]
     },
     {
       "id": "EPIC-FEAT-002",
@@ -137,7 +160,11 @@
       "status": "To Do",
       "storyPoints": 19,
       "ownerId": "USR-001",
-      "labels": ["Feature", "Profiles", "MVP"]
+      "labels": [
+        "Feature",
+        "Profiles",
+        "MVP"
+      ]
     },
     {
       "id": "EPIC-FEAT-003",
@@ -148,7 +175,11 @@
       "status": "To Do",
       "storyPoints": 8,
       "ownerId": "USR-001",
-      "labels": ["Feature", "Preferences", "MVP"]
+      "labels": [
+        "Feature",
+        "Preferences",
+        "MVP"
+      ]
     },
     {
       "id": "EPIC-FEAT-004",
@@ -159,7 +190,11 @@
       "status": "To Do",
       "storyPoints": 13,
       "ownerId": "USR-001",
-      "labels": ["Feature", "Media", "MVP"]
+      "labels": [
+        "Feature",
+        "Media",
+        "MVP"
+      ]
     },
     {
       "id": "EPIC-FEAT-005",
@@ -170,7 +205,11 @@
       "status": "To Do",
       "storyPoints": 16,
       "ownerId": "USR-001",
-      "labels": ["Feature", "Search", "MVP"]
+      "labels": [
+        "Feature",
+        "Search",
+        "MVP"
+      ]
     },
     {
       "id": "EPIC-FEAT-006",
@@ -181,7 +220,11 @@
       "status": "To Do",
       "storyPoints": 16,
       "ownerId": "USR-001",
-      "labels": ["Feature", "Interests", "MVP"]
+      "labels": [
+        "Feature",
+        "Interests",
+        "MVP"
+      ]
     },
     {
       "id": "EPIC-FEAT-007",
@@ -192,7 +235,11 @@
       "status": "To Do",
       "storyPoints": 11,
       "ownerId": "USR-001",
-      "labels": ["Feature", "Notifications", "MVP"]
+      "labels": [
+        "Feature",
+        "Notifications",
+        "MVP"
+      ]
     },
     {
       "id": "EPIC-FEAT-008",
@@ -203,7 +250,11 @@
       "status": "To Do",
       "storyPoints": 11,
       "ownerId": "USR-001",
-      "labels": ["Feature", "Privacy", "MVP"]
+      "labels": [
+        "Feature",
+        "Privacy",
+        "MVP"
+      ]
     }
   ],
   "stories": [
@@ -214,12 +265,17 @@
       "description": "Implement the mobile phone number input form in the login screen, with an API endpoint that generates a 6-digit OTP, stores it in Redis with a 5-minute TTL, and triggers the SMS gateway delivery.",
       "businessValue": "Critical - Initial point of entry and security boundary for serious seekers.",
       "priority": "High",
-      "status": "Backlog",
+      "status": "Review",
       "storyPoints": 5,
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-07-15",
-      "labels": ["Frontend", "Backend", "Auth", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Backend",
+        "Auth",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Login screen renders a clean mobile number input conforming to standard E.164 formats.",
         "Submit button sends a POST request to '/api/v1/auth/otp/send' with phone number payload.",
@@ -237,12 +293,17 @@
       "description": "Implement code verification form and backend validation logic which confirms the Redis OTP key, issues short-lived Access Token (JWT) and sets standard session cookies.",
       "businessValue": "Critical - Authenticates identity and unlocks the onboarding wizard.",
       "priority": "High",
-      "status": "Backlog",
+      "status": "Review",
       "storyPoints": 5,
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-07-15",
-      "labels": ["Frontend", "Backend", "Auth", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Backend",
+        "Auth",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "OTP verification overlay renders 6 numeric character inputs.",
         "POST request sent to '/api/v1/auth/otp/verify' containing phone number and OTP code.",
@@ -265,7 +326,12 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-07-20",
-      "labels": ["Frontend", "Backend", "Auth", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Backend",
+        "Auth",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Option to switch to Email Login visible on login dialog.",
         "POST request to '/api/v1/auth/magic-link/send' initiates temporary login ticket (15-min expiry).",
@@ -288,7 +354,12 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-07-20",
-      "labels": ["Backend", "Auth", "Security", "REL-001"],
+      "labels": [
+        "Backend",
+        "Auth",
+        "Security",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Gateway verifies JWT validity checking signature, expiration, and verified claims.",
         "React app triggers Axios interceptor to execute '/api/v1/auth/refresh' silently before 15-minute token expiry.",
@@ -310,7 +381,12 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-07-22",
-      "labels": ["Backend", "Auth", "Security", "REL-001"],
+      "labels": [
+        "Backend",
+        "Auth",
+        "Security",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Store login failure count in Redis tied to target phone key.",
         "Upon 3 consecutive incorrect OTP entries, raise 'OTP_VERIFICATION_LOCKED' error response.",
@@ -332,7 +408,11 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-07-25",
-      "labels": ["Frontend", "Profiles", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Profiles",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Wizard collects Name, Gender, DOB (verifies age is >= 18 years), Height in cm, and Mother Tongue.",
         "Inputs utilize Neumorphic inset deep shadow wells with active accent highlighting.",
@@ -354,7 +434,11 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-07-25",
-      "labels": ["Frontend", "Profiles", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Profiles",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Wizard collects Family Type (Nuclear/Joint), Parents' Occupations, Family Status, and Family Values.",
         "Utilizes standard dropdown boxes restricted strictly to system-configured database values.",
@@ -376,7 +460,11 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-07-28",
-      "labels": ["Frontend", "Profiles", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Profiles",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Wizard fields map Highest Degree, University, Current Occupation, Industry, Annual Income Range.",
         "Captures lifestyle factors: Diet (Veg/Non-Veg/Eggitarian) and habits (smoking/drinking).",
@@ -398,7 +486,11 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-07-30",
-      "labels": ["Frontend", "Profiles", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Profiles",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Progress indicator displays percentage status calculated dynamically based on filled database properties.",
         "Cheklist prompts user to complete missing blocks (e.g. upload photo, input preferences).",
@@ -420,7 +512,12 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-02",
-      "labels": ["Frontend", "Backend", "Profiles", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Backend",
+        "Profiles",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Dashboard fetches current user metadata and presents it in read-only Neumorphic clay containers.",
         "Clicking field toggles edit inputs, validated against server rules upon saving.",
@@ -442,7 +539,11 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-08-05",
-      "labels": ["Frontend", "Preferences", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Preferences",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Renders dual-thumb Neumorphic range sliders for age (min 18, max 70) and height boundaries.",
         "Supports multi-select tag inputs for Religions, Languages, and Locations.",
@@ -464,7 +565,11 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-05",
-      "labels": ["Backend", "Preferences", "REL-001"],
+      "labels": [
+        "Backend",
+        "Preferences",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "API service rejects ranges failing core boundaries (e.g. min age < 18, min height <= 0).",
         "If profile is loaded with empty parameters, defaults preference fields based on user's own regional location."
@@ -485,7 +590,12 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-07",
-      "labels": ["Backend", "Preferences", "Search", "REL-001"],
+      "labels": [
+        "Backend",
+        "Preferences",
+        "Search",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Saves target filters to 'partner_preferences' table.",
         "Emits update event on message queue triggering Search service recommendations cache reload."
@@ -506,7 +616,11 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-08-10",
-      "labels": ["Frontend", "Media", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Media",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Uploader supports drag-and-drop or select file triggers for up to 5 items.",
         "Validates size (max 5MB per file) and MIME type (.jpg, .jpeg, .png only) client-side.",
@@ -528,7 +642,12 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-10",
-      "labels": ["Backend", "Media", "Security", "REL-001"],
+      "labels": [
+        "Backend",
+        "Media",
+        "Security",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Direct requests for raw bucket files blocked; files must be requested through secure temporary signed links.",
         "API endpoint returns JSON mapping S3 upload destination and unique keys.",
@@ -550,7 +669,13 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-08-12",
-      "labels": ["Frontend", "Backend", "Media", "Privacy", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Backend",
+        "Media",
+        "Privacy",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Photo cards render actions to 'Set as Profile Picture' and toggle visibility (Public, Accepted Only, Hidden).",
         "Changing photo visibility flags instantly updates profile database record.",
@@ -572,7 +697,11 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-08-15",
-      "labels": ["Frontend", "Search", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Search",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Matches display as heavy rounded (32px) cards using Extruded Resting layout.",
         "Hovering over profile card triggers smooth translateY movement and shadow transition.",
@@ -594,7 +723,11 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-15",
-      "labels": ["Backend", "Search", "REL-001"],
+      "labels": [
+        "Backend",
+        "Search",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Search service maps incoming HTTP GET params to Elasticsearch JSON query clauses.",
         "Validates location coordinates utilizing geodistance boundary filters.",
@@ -616,7 +749,11 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-18",
-      "labels": ["Backend", "Search", "REL-001"],
+      "labels": [
+        "Backend",
+        "Search",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Matchmaker worker runs cron task evaluating preferences compatibility score (> 80%).",
         "Serves exactly 10 curated profile objects to the user match cache.",
@@ -638,7 +775,11 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-18",
-      "labels": ["Backend", "Search", "REL-001"],
+      "labels": [
+        "Backend",
+        "Search",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Profile database records capture user's last login date.",
         "Sync script updates Elasticsearch index, setting query filter 'is_active: false' for records without recent logins.",
@@ -660,7 +801,12 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-08-20",
-      "labels": ["Frontend", "Backend", "Interests", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Backend",
+        "Interests",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Profile cards render clear 'Send Interest' call-to-action button.",
         "Clicking posts data to '/api/v1/interests' modifying request status in Profile Database.",
@@ -682,7 +828,12 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-20",
-      "labels": ["Frontend", "Backend", "Interests", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Backend",
+        "Interests",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Dashboard displays actions to Approve or Decline received interests.",
         "Approving request changes status to MATCHED and sends RabbitMQ 'match.interest.accepted' event.",
@@ -704,7 +855,11 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-08-22",
-      "labels": ["Frontend", "Interests", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Interests",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Inbox panel splits requests into 'Received Interests', 'Sent Interests', and 'Accepted Matches'.",
         "Lists display sender avatars, matched tags, and creation dates.",
@@ -726,7 +881,12 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-22",
-      "labels": ["Backend", "Interests", "Security", "REL-001"],
+      "labels": [
+        "Backend",
+        "Interests",
+        "Security",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Database constraints prevent duplicate records for same sender-receiver pairs.",
         "If sender issues a second interest while status is PENDING, service blocks query and logs request."
@@ -747,7 +907,11 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-08-25",
-      "labels": ["Frontend", "Notifications", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Notifications",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Header bell icon shows red numeric badge representing unread notifications count.",
         "Clicking icon displays Neumorphic overlay listing recent match actions.",
@@ -769,7 +933,11 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-25",
-      "labels": ["Backend", "Notifications", "REL-001"],
+      "labels": [
+        "Backend",
+        "Notifications",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Notification service consumes 'user.auth.created' and 'match.interest.accepted' event streams.",
         "Triggers push notifications callback via external provider client integrations."
@@ -790,7 +958,11 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-28",
-      "labels": ["Backend", "Notifications", "REL-001"],
+      "labels": [
+        "Backend",
+        "Notifications",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Cron scheduler executes daily compiled user digests from Redis recommendation lists.",
         "Dispatches personalized SendGrid templates listing match counts and verification status.",
@@ -812,7 +984,11 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-08-28",
-      "labels": ["Frontend", "Notifications", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Notifications",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Client maps currently focused conversation IDs in state manager.",
         "If a notification is received for an active conversation, suppress the alert sound and bubble UI."
@@ -833,7 +1009,12 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-08-30",
-      "labels": ["Frontend", "Backend", "Privacy", "REL-001"],
+      "labels": [
+        "Frontend",
+        "Backend",
+        "Privacy",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Privacy settings render visibility toggle switch (Public vs Hidden).",
         "Changing toggle sends PUT payload updating PostgreSQL state.",
@@ -855,7 +1036,13 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-30",
-      "labels": ["Backend", "Media", "Privacy", "Security", "REL-001"],
+      "labels": [
+        "Backend",
+        "Media",
+        "Privacy",
+        "Security",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Profiles endpoint checks request status between source and target IDs.",
         "If status is not MATCHED, rewrite CDN photo URLs to point to pre-blurred placeholder assets.",
@@ -877,7 +1064,12 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-30",
-      "labels": ["Backend", "Privacy", "Security", "REL-001"],
+      "labels": [
+        "Backend",
+        "Privacy",
+        "Security",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "API Gateway scans search and profile responses.",
         "Unless relationship type is MATCHED, mask phone numbers (e.g. +91******340) and emails (e.g. ar***@domain.com) server-side.",
@@ -899,7 +1091,12 @@
       "assigneeId": "USR-002",
       "reporterId": "USR-001",
       "dueDate": "2026-07-28",
-      "labels": ["Analytics", "Profiles", "Risk", "REL-001"],
+      "labels": [
+        "Analytics",
+        "Profiles",
+        "Risk",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "React wizard triggers 'onboarding_wizard_step' telemetry event on step transition.",
         "Telemetry reports containing step number and elapsed time are pushed to analytics service database.",
@@ -921,7 +1118,12 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-09-02",
-      "labels": ["Chat", "Privacy", "Risk", "REL-001"],
+      "labels": [
+        "Chat",
+        "Privacy",
+        "Risk",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Chat routing service evaluates outgoing text payloads.",
         "Uses regular expressions checking for common phone number patterns.",
@@ -938,12 +1140,17 @@
       "description": "Research API integration paths, delivery speed, and cost matrices for Twilio vs AWS SNS providers.",
       "businessValue": "Technical spike to investigate OTP dispatch latency targets (< 2 seconds).",
       "priority": "High",
-      "status": "Backlog",
+      "status": "Done",
       "storyPoints": 2,
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-07-10",
-      "labels": ["Auth", "Infrastructure", "Spike", "REL-001"],
+      "labels": [
+        "Auth",
+        "Infrastructure",
+        "Spike",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Produce architectural spike summary detailing pricing models and sandbox setup constraints.",
         "Validate p95 gateway response latency is within standard limits (< 2 seconds).",
@@ -965,7 +1172,12 @@
       "assigneeId": "USR-003",
       "reporterId": "USR-001",
       "dueDate": "2026-08-10",
-      "labels": ["Search", "Infrastructure", "Spike", "REL-001"],
+      "labels": [
+        "Search",
+        "Infrastructure",
+        "Spike",
+        "REL-001"
+      ],
       "acceptanceCriteria": [
         "Establish local Docker index instance with dummy profile locations.",
         "Verify query latency performance under concurrent reads.",
