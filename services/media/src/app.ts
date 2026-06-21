@@ -13,6 +13,18 @@ import {
 const app = express();
 app.use(express.json());
 
+// Enable CORS
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization, x-correlation-id');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+  if (req.method === 'OPTIONS') {
+    res.sendStatus(200);
+    return;
+  }
+  next();
+});
+
 const logger = new Logger('media-service');
 const port = process.env.PORT || 3008;
 const jwtSecret = process.env.JWT_SECRET || 'supersecretkeyforjwt';
